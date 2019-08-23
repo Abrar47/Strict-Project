@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+
+font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+li{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+    color: #15a4fa;
+}
+.container{
+    text-decoration: none;
+    width: 1140px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: #F5F9FA;
+    padding: 15px;
+}
+.logo{
+    flex-basis: 20%;
+    max-width: 20%;
+}
+.loog img{}
+nav{
+    flex-basis: 80%;
+    max-width: 80%;
+}
+nav ul{
+    justify-content: flex-end;
+}
+nav ul li{}
+nav ul li a{
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+nav ul li a:hover{}
+
+
+.banner-section{
+    background-image: url(../images/banner.jpg);
+    text-align: center;
+}
+.banner-section .flex{
+    justify-content: center;
+    height: 110vh;
+    align-items: center;
+}
+.banner-content{
+    max-width: 50%;
+    flex-basis: 50%;
+    color: #fff;
+}
+.banner-content h1{font-size: 7em;text-transform: uppercase;}
+.banner-content p{
+    margin: 20px 0px;
+}
+.banner-content span{
+    width: 100%;
+    height: 3px;
+    background-color: #15a4fa;
+    display: block;
+    margin: auto;
+}
+.banner-content button{
+    background-color: transparent;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.about-strict{
+    text-align: center;
+    padding: 70px;
+    background-color: #F5F9FA;
+}
+.about-strict h1{
+    color: #2d3950;
+    font-size: 35px;
+}
+.about-strict p{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 25px;
+    color: #6c7682;
+}
+
+.features-section{
+    padding: 50px;
+    text-align: center;
+}
+.feature{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+}
+.feature div{
+    /* background-color: #15a4fa; */
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    line-height: 50px;
+    font-size: 30px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1664ff+0,1664ff+0,15a4fa+51,1664ff+51 */
+    background: rgb(22,100,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(22,100,255,1) 0%, rgba(22,100,255,1) 0%, rgba(21,164,250,1) 51%, rgba(22,100,255,1) 51%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(22,100,255,1) 0%,rgba(22,100,255,1) 0%,rgba(21,164,250,1) 51%,rgba(22,100,255,1) 51%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(22,100,255,1) 0%,rgba(22,100,255,1) 0%,rgba(21,164,250,1) 51%,rgba(22,100,255,1) 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1664ff', endColorstr='#1664ff',GradientType=0 ); /* IE6-9 */
+}
+.feature i{}
+.feature h2{
+    color: #2d3950;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.feature p{
+    margin-top: 30px;
+    color: #2d3950;
+}
+
+.showcase-section{
+    background-color: #f5f9fa;
+    padding: 50px 0;
+}
+.showcase-section h1{
+    color: #2d3950;
+    font-size: 35px;
+    text-align: center;
+}
+.showcase-section p{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 25px;
+    color: #2d3950;
+    text-align: center;
+}
+.showcase{
+    padding: 15px;
+    flex-basis: 33.33%;
+}
+.showcase > div{
+    position: relative;
+    overflow: hidden;
+}
+.showcase .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950b3;
+    top: 0;
+    left: 0;
+}
+.showcase:hover .overlay{
+    
+}
+.showcase div img{
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+.showcase:hover img{
+    transform: scale(1.1);
+
+}
+
+.plus{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    border: 1px solid;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transform: translate(-7px, -20px);
+}
+.link{
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    border: 1px solid;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transform: translate(-7px, -20px);
+}
+
+
+
+.contact-section{
+    background-image: url(../images/contact.png);
+    padding: 150px 0;
+    background-color: #212121d9;
+    background-blend-mode: saturation;
+}
+.contact-section .flex{
+    justify-content: center;
+}
+.contact-form{
+    color: #fff;
+    text-align: center;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.contact-form h1{
+    font-size: 35px;
+    text-align: center;
+}
+.contact-form p{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 25px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+form{
+    margin-top: 46px;
+}
+form > input{
+    padding: 10px 15px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+}
+form textarea{
+    padding: 10px 15px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+}
+form ul{
+    align-items: center;
+}
+form ul li{
+    flex-basis: 50%;
+    max-width: 50%;
+    text-align: left;
+}
+form ul li input{}
+form ul li label{}
+form ul li input[type="submit"]{
+    background-color: transparent;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form ul li:last-child{
+    text-align: right;
+}
+
+
+footer{background-color: #f5f9fa;padding: 50px 0;}
+.copyright{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.copyright p{
+    color: #8c8c8c;
+    text-transform: capitalize;
+}
+.social-link{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.social-link ul{justify-content: flex-end;}
+.social-link ul li{
+}
+.social-link ul li a{padding: 0 15px;font-size: 24px;}
+.social-link ul li a:hover{}
+
+
+
+
+
+ 
+
+
+
+
